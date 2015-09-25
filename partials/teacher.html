@@ -1,0 +1,15 @@
+<h1>Student Attendance</h1>
+
+<h2>These folks are here:</h2>
+    <ul>
+        <li ng-repeat='student in studentsInClass = (students | filter:{ in_class: true })'>
+            {{ student.name }}
+        </li>
+    </ul>
+
+<h2>These folks are not here:</h2>
+    <ul>
+        <li ng-repeat='item in studentsNotInClass = (students | filter:{ in_class: false })'>
+            {{ item.name }}
+        </li>
+    </ul>

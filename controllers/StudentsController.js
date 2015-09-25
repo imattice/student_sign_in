@@ -9,4 +9,12 @@ signIn.controller('StudentsCtrl', function StudentsCtrl($scope, StudentsFactory)
             student.in_class = true;
         }
     }
+
+    $scope.filterInClass = function(student) {
+        return student.in_class == true;
+    }
+
+    $scope.filterNotInClass = function(student) {
+        return student.in_class == false;
+    }
 })
