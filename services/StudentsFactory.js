@@ -8,4 +8,6 @@ signIn.factory('StudentsFactory', function StudentsFactory() {
         {name: 'Scott Walker', id: 4, in_class: false },
         {name: 'Donald Trump', id: 5, in_class: true }
     ]
-})
+
+    return factory;
+});
