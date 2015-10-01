@@ -5,7 +5,7 @@
     <ul>
         <li ng-repeat='student in students'>
             {{ student.name }}
-            <button ng-show ='student.in_class == false' ng-click='toggleInClass(student)' type='button'>Sign In!</button>
-            <button ng-show ='student.in_class == true' ng-click='toggleInClass(student)' type='button'>Sign Out!</button>
+            <button ng-show ='!student.in_class' ng-click='toggleInClass(student)' type='button'>Sign In!</button>
+            <button ng-show ='student.in_class' ng-click='toggleInClass(student)' type='button'>Sign Out!</button>
         </li>
     </ul>
